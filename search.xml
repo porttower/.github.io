@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>我的博客</title>
+    <url>/.github.io/2021/10/18/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="Vscode-使用Markdown编写博客"><a href="#Vscode-使用Markdown编写博客" class="headerlink" title="Vscode 使用Markdown编写博客"></a>Vscode 使用Markdown编写博客</h1><p><code>Ctrl+Shift+P</code> 调出主命令框，输入<code>Markdown</code></p>
+<h2 id="1标题表示方法"><a href="#1标题表示方法" class="headerlink" title="1标题表示方法"></a><strong>1标题表示方法</strong></h2><p># <strong>H1</strong></p>
+<p>## <strong>H2</strong></p>
+<h2 id="2-代码行表示"><a href="#2-代码行表示" class="headerlink" title="2 代码行表示"></a><strong>2 代码行表示</strong></h2><blockquote>
+<p>&gt;hello world!</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>&gt;&gt;多层代码嵌套</p>
+</blockquote>
+</blockquote>
+<h2 id="号，标记之外hello-world标记之外"><a href="#号，标记之外hello-world标记之外" class="headerlink" title="`号，标记之外hello world标记之外"></a>`号，标记之外<code>hello world</code>标记之外</h2><h2 id="3-代码块表示"><a href="#3-代码块表示" class="headerlink" title="3 代码块表示"></a><strong>3 代码块表示</strong></h2><p>注：用```生成块</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;dir&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="自定义语法"><a href="#自定义语法" class="headerlink" title="自定义语法"></a><strong>自定义语法</strong></h3><p>注：根据不通的语言配置不同的代码着色</p>
+<p>```javascript</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> num = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>); i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    num+=i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(num);</span><br></pre></td></tr></table></figure>
+<p>```python</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="built_in">print</span> (<span class="string">&quot;hello world&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>```c</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span> (<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">    returun <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a><strong>插入图片</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![](./1.jpg &#x27;描述&#x27;)</span><br></pre></td></tr></table></figure>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="./1.jpg" title="描述"></h2><h3 id="语义标记"><a href="#语义标记" class="headerlink" title="语义标记"></a><strong>语义标记</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">描述	效果	代码</span><br><span class="line"></span><br><span class="line">斜体	斜体	*斜体*</span><br><span class="line"></span><br><span class="line">斜体	斜体	_斜体_</span><br><span class="line"></span><br><span class="line">加粗	加粗	**加粗**</span><br><span class="line"></span><br><span class="line">加粗+斜体	加粗+斜体	***加粗+斜体***</span><br><span class="line"></span><br><span class="line">加粗+斜体	加粗+斜体	**_加粗+斜体_**</span><br><span class="line"></span><br><span class="line">删除线	删除线	~~删除线~~</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="分隔符"><a href="#分隔符" class="headerlink" title="分隔符"></a><strong>分隔符</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">***</span><br><span class="line">---</span><br><span class="line">* * *</span><br></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br><span class="line">hexo g   # 生成页面</span><br><span class="line">hexo d   # 部署发布</span><br><span class="line">hexo new &quot;name&quot;       # 新建文章</span><br><span class="line">hexo new page &quot;name&quot;  # 新建页面</span><br><span class="line">hexo g                # 生成页面</span><br><span class="line">hexo d                # 部署</span><br><span class="line">hexo g -d             # 生成页面并部署</span><br><span class="line">hexo s                # 本地预览</span><br><span class="line">hexo clean            # 清除缓存和已生成的静态文件</span><br><span class="line">hexo help             # 帮助</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+</search>
